@@ -1,0 +1,51 @@
+.header-3{
+    font-size: 1.55rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    &--dark{
+        color: $color-gray-dark-1;
+    }
+
+    &--light{
+        color: $color-primary;
+    }
+    
+}
+
+.header-1{
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.header-2{
+    font-size: 3.5rem;
+    columns:$color-gray-dark-2;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.header-4{
+    color:$color-gray-light-1 ;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn{
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    background-color:$color-primary;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus{
+        background-color:$color-primary-dark;
+    }
+
+}

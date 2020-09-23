@@ -1,0 +1,64 @@
+$color-primary:#c69963;
+$color-primary-dark:#b28451;
+
+$color-secondary:#101d2c;
+
+$color-gray-light-1:#f9f7f6;
+$color-gray-light-2:#aaa;
+
+$color-gray-dark-1:#54483a;
+$color-gray-dark-2:#6d5d4b;
+
+$bp-largest:75em;
+$bp-large:56.25em;
+$bp-medium:37.5em;
+
+.mb-larg{
+    margin-bottom: 4rem;
+}
+.mb-medium{
+    margin-bottom: 3rem;
+}
+.mb-small{
+    margin-bottom: 2rem;
+}
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width:$bp-largest){
+        font-size: 50%;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    
+
+    display: grid;
+    grid-template-rows:  90vh min-content 40vw repeat(3,min-content) ;
+    grid-template-columns: [star-container] 6rem [start-center] minmax(6rem, 1fr )  repeat(8, [start-column] minmax(min-content,13rem) [end-column])  minmax(6rem,1fr) [end-container] ;
+
+    @media only screen and (max-width:$bp-large){
+        grid-template-rows: 6rem  100vh repeat(3,min-content) 40vw repeat(3,min-content) ;
+        grid-template-columns: [start-center]  minmax(6rem, 1fr )  repeat(8, [start-column] minmax(min-content,13rem) [end-column])  minmax(6rem,1fr) [end-container] ;
+    }
+}
